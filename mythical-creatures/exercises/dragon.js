@@ -4,7 +4,7 @@ module.exports = {
   createDragon, 
   greetRider, 
   eat, 
-  // findFireBreathers
+  findFireBreathers
 }
 
 function createDragon(name, rider, temperment) {
@@ -22,9 +22,6 @@ function greetRider(dragon) {
   return `Hi, ${dragon.rider}!`
 }
 
-
-
-
   function eat(dragon) {
     dragon.timesEaten = dragon.timesEaten + 1;
     if (dragon.timesEaten >= 3) {
@@ -33,3 +30,11 @@ function greetRider(dragon) {
     return dragon
   }
 
+function findFireBreathers(allDragons) {
+  var fireBreathers = []
+  for (var i=0; i < allDragons.length; i++){
+    if (allDragons[i].temperment === 'aggressive') {
+      fireBreathers.push(allDragons[i]);
+    }
+  } return fireBreathers;
+}
