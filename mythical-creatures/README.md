@@ -13,7 +13,7 @@ Run the command `npm test mythical-creatures/test/dragon-test.js`. To run other 
 ### Creature Order
 
 - [X] `dragon`
-- [ ] `vampire`
+- [X] `vampire`
 - [X] `hobbit`
 
 ### Extra Challenge: Make a New Creature!
